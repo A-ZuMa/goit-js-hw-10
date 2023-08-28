@@ -1,3 +1,11 @@
+# Модуль 10 . Заняття 19. Взаємодія з бекендом
+
+https://www.youtube.com/watch?v=cakeT8iw_BE
+
+# Модуль 10 . Заняття 20. Взаємодія з бекендом
+
+https://www.youtube.com/watch?v=x5_VWcOZIWQ
+
 # Parcel template
 
 Этот проект был создан при помощи Parcel. Для знакомства и настройки
