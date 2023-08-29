@@ -1,1 +1,90 @@
-/* import './node_modules/slim-select/dist/slimselect.css'; */
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+.container {
+  max-width: 1700px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+h1 {
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  /* font-family: 'Cat Cat', sans-serif; */
+  font-family: 'Cats Style', sans-serif;
+  color: chocolate;
+  font-weight: 400;
+  font-size: 80px;
+  text-align: center;
+}
+.breed-select {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+}
+.cat-info {
+  margin-top: 40px;
+  display: flex;
+  column-gap: 40px;
+  flex-wrap: wrap;
+}
+.container .cat-info .image,
+.container .cat-info .text {
+  width: 100%;
+}
+@media only screen and (min-width: 1024px) {
+  .container .cat-info .image,
+  .container .cat-info .text {
+    width: calc(50% - 20px);
+  }
+}
+.image {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text {
+  font-size: 18px;
+  line-height: 1.2;
+}
+.name {
+  font-family: 'Cats Style', sans-serif;
+  color: #98975e;
+  font-weight: 400;
+  font-size: 40px;
+}
+.temperament {
+  margin-bottom: 20px;
+}
+.temperament span {
+  font-family: 'Cats Style', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+}
+.temperament text {
+  color: blueviolet;
+}
+.loader {
+  /* text-indent: -9999; */
+  width: 48px;
+  height: 48px;
+  border: 5px solid #00c7ac;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  transform: translate(100%, -100%);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+}
+.hidden {
+  display: none;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
