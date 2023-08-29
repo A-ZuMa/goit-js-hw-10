@@ -21,7 +21,7 @@ function handlerBreedSearch() {
       new SlimSelect({
         select: elements.select,
         settings: {
-          showSearch: true,
+          showSearch: false,
           placeholderText: 'Choose you breed',
         },
       });
@@ -67,10 +67,10 @@ function createMarkup(arr) {
         <img src="${url}" class="image" alt="${breeds.map(item => item.name)}"/>
         <div class="text">
           <h2 class="name">${breeds.map(item => item.name)}</h2>
+          <div class="description">${breeds.map(item => item.description)}</div>
           <div class="temperament"><span>Temperament: </span>${breeds.map(
             item => item.temperament
           )}</div>
-          <div class="description">${breeds.map(item => item.description)}</div>
         </div>`
     )
     .join('');
