@@ -19,9 +19,10 @@ function handlerBreedSearch() {
       elements.select.innerHTML = createSelectMarkup(data);
       // console.log(data);
       new SlimSelect({
-        select: '#single',
+        select: elements.select,
         settings: {
-          showSearch: false,
+          showSearch: true,
+          placeholderText: 'Choose you breed',
         },
       });
     })
@@ -30,7 +31,6 @@ function handlerBreedSearch() {
     })
     .finally(() => {
       elements.loader.classList.add('hidden');
-      // console.dir(elements.loader);
     });
 }
 
@@ -71,8 +71,7 @@ function createMarkup(arr) {
             item => item.temperament
           )}</div>
           <div class="description">${breeds.map(item => item.description)}</div>
-        </div>
-    `
+        </div>`
     )
     .join('');
 }

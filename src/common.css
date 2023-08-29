@@ -1,4 +1,5 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+@import '~node_modules/slim-select/dist/slimselect.css';
 
 .container {
   max-width: 1700px;
